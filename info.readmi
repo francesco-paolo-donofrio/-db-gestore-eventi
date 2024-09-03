@@ -1,0 +1,8 @@
+Database Queries & Relationships Repository
+Descrizione
+Questa repository contiene una raccolta di query SQL e le relative definizioni delle relazioni tra le tabelle del database che ho creato, utilizzando MySQL. Il database è stato progettato per gestire le prenotazioni di eventi da parte di utenti con diversi ruoli.
+
+Le query in questa repository sono organizzate per tipo di operazione e sono progettate per semplificare l'interazione con il database, sia per scopi di gestione che per l'estrazione di report.
+
+Struttura della Repository
+/queries: Contiene le query SQL suddivise per categoria (SELECT, INSERT, UPDATE, DELETE).
