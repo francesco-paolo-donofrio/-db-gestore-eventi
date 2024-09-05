@@ -1,2 +1,5 @@
 Query 1 : SELECT * FROM `events` WHERE `price` IS NULL;
 Query 2 : SELECT * FROM `locations` ORDER BY `name` ASC;
+Query 3 : SELECT * FROM `events` WHERE `price`< 20 AND `duration`< "03:00:00";
+Query 4 : SELECT * FROM `events` WHERE `start` LIKE '%2023-12%';
+Query 5 : SELECT * FROM `events` WHERE `duration` > "02:00:00";
