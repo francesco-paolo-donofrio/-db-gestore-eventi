@@ -1,0 +1,2 @@
+Query 1 : SELECT * FROM `events` WHERE `price` IS NULL;
+Query 2 : SELECT * FROM `locations` ORDER BY `name` ASC;
