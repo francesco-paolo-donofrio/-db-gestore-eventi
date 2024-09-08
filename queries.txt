@@ -12,3 +12,5 @@ Query 11 : SELECT * FROM `events` JOIN `tags` ON `events`.`id` = `tags`.`id` WHE
 Query 12 : SELECT `locations`.`id`, `locations`.`name`, COUNT(`events`.`id`) AS event_count FROM `locations` LEFT JOIN `events` ON `locations`.`id` = `events`.`location_id` GROUP BY `locations`.`id`, `locations`.`name`;
 Query 13 : SELECT `user_id` AS participant_id FROM `bookings` WHERE `event_id` = 34;
 Query 14 : SELECT `first_name` AS nome, `last_name` AS cognome FROM `users` JOIN `bookings` ON `users`.`id` = `bookings`.`id` WHERE `event_id` = 2;
+Query 15 : SELECT `events`.`id`, `events`.`name`, `events`.`slug`, `events`.`description`, SUM(`bookings`.`user_id`) AS total_booked FROM `events` JOIN `bookings` ON `events`.`id` = `bookings`.`user_id` GROUP BY `events`.`id`, `events`.`name`, `events`.`slug`, `events`.`description`, `events`.`total_tickets` HAVING total_booked = `events`.`total_tickets`;
+Query 16 : 
