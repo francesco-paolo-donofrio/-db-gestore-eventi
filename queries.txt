@@ -11,3 +11,4 @@ Query 10 : SELECT * FROM `event_tag` WHERE `tag_id`= 1;
 Query 11 : SELECT * FROM `events` JOIN `tags` ON `events`.`id` = `tags`.`id` WHERE (SELECT AVG(`price`) FROM `events`);
 Query 12 : SELECT `locations`.`id`, `locations`.`name`, COUNT(`events`.`id`) AS event_count FROM `locations` LEFT JOIN `events` ON `locations`.`id` = `events`.`location_id` GROUP BY `locations`.`id`, `locations`.`name`;
 Query 13 : SELECT `user_id` AS participant_id FROM `bookings` WHERE `event_id` = 34;
+Query 14 : SELECT `first_name` AS nome, `last_name` AS cognome FROM `users` JOIN `bookings` ON `users`.`id` = `bookings`.`id` WHERE `event_id` = 2;
