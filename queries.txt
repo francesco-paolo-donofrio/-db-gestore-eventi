@@ -5,6 +5,7 @@ Query 4 : SELECT * FROM `events` WHERE `start` LIKE '%2023-12%';
 Query 5 : SELECT * FROM `events` WHERE `duration` > "02:00:00";
 Query 6 : SELECT `name`,`start`,`duration` FROM `events`;
 Query 7 : SELECT * FROM `events` WHERE `user_id` = "1202";
-Query 8 : 
+Query 8 : SELECT COUNT(price) FROM `events` GROUP BY `price`;
 Query 9 : SELECT `first_name`, `last_name`, `username`, `email`, `bio`, `date_of_birth`,`role_id` FROM `users` WHERE `role_id` = 1 OR `role_id` = 2;
 Query 10 : SELECT * FROM `event_tag` WHERE `tag_id`= 1;
+Query 11 : 
